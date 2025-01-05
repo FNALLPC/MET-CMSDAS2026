@@ -41,12 +41,12 @@ $$\vec{q}_{T} + \vec{u}_{T} + \vec{p}_{T}^{miss} =0$$,
 where $$\vec{q}_{T}$$ is the transverse momentum of the Z boson, and $$\vec{u}_{T}$$ is the hadronic recoil.
 
 Define two components of the hadronic recoil to study the MET response and resolution:
-- hadronic recoil parallel ($$u_{||}$$) to the boson axis: sensitive to the scale of boson/jets
+- hadronic recoil parallel ($$u_{\parallel}$$) to the boson axis: sensitive to the scale of boson/jets
 - perpendicular ($$u_{\perp}$$) to the boson axis: sensitive to isotropic effects like pileup
 
-Specifically, the mean of the distribution of the magnitude of $$q_{T} + u_{||}$$, is used to estimate the MET response, whereas the RMS of $$q_{T} + u_{||}$$ and $$u_{\perp}$$ distributions are used to estimate the MET resolution in the axis parallel and perpendicular to the Z boson, respectively. 
+Specifically, the mean of the distribution of the magnitude of $$q_{T} + u_{\parallel}$$, is used to estimate the MET response, whereas the RMS of $$q_{T} + u_{\parallel}$$ and $$u_{\perp}$$ distributions are used to estimate the MET resolution in the axis parallel and perpendicular to the Z boson, respectively. 
 
-An example of the $$q_{T} + u_{||}$$ and $u_{\perp}$ distributions is shown in the following plots.
+An example of the $$q_{T} + u_{\parallel}$$ and $u_{\perp}$ distributions is shown in the following plots.
 
 <img src="../fig/episode3/upar_uperp_dist.png" alt="" style="width:70%">
 
