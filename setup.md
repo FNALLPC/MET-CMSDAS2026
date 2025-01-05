@@ -12,13 +12,19 @@ ssh -Y yourlpcusername@cmslpc-el9.fnal.gov
 ~~~
 {: .language-bash}
 
-If you haven't done it yet, go to your `nobackup` area (`/uscms_data/d3/<YOUR USERNAME>/`) and create a folder for the CMSDAS exercises. Once you are there you can setup CMSSW and clone our repository:
+If you haven't done it yet, go to your `nobackup` area (`/uscms_data/d3/<YOUR USERNAME>/`) and create a folder for the CMSDAS exercises.
 
 ~~~
 cd ~/nobackup
 mkdir METDAS
 cd METDAS
+~~~
+{: .language-bash}
 
+Once you are there you can setup CMSSW and clone our repository:
+
+~~~
+cmssw-el7
 source /cvmfs/cms.cern.ch/cmsset_default.sh
 cmsrel CMSSW_12_4_11_patch3
 cd CMSSW_12_4_11_patch3/src
@@ -30,8 +36,7 @@ scram b -j4
 {: .language-bash}
 
 > ## Remember
-> Once you clone the repository, using the `DASJan2025` branch, the necessary are located
-> in `METDAS/MET_Analysis/test`
+> Once you clone the repository, using the `DASJan2025` branch, the necessary scripts for this lesson are located in `CMSDAS_MET/CMSDAS_MET_Analysis/test` and `CMSDAS_MET/scripts`.
 {: .callout}
 
 Activate your grid certificate:
