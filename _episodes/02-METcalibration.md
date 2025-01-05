@@ -5,11 +5,11 @@ exercises: 10
 questions:
 - "Why do we need to calibrate MET? How is the performance measured?"
 - "What are the different ways of calibrating MET at CMS?"
-- "What is MET-$/phi$ modulation? How to correct for it?"
+- "What is MET-$\phi$ modulation? How to correct for it?"
 objectives:
 - "Learn about the MET calibration procedure and techniques used at CMS."
 - "Learn about measuring MET performance."
-- "Understand MET-$/phi$ modulation and how to account for it."
+- "Understand MET-$\phi$ modulation and how to account for it."
 keypoints:
 - "Inaccurate MET estimation can arise from sources such as nonlinearity in the calorimeter's response to hadrons, minimum energy thresholds in the calorimeters, and pT thresholds or inefficiencies in track reconstruction, and is mitigated through calibration procedures described in this exercise."
 - "Type-1 MET is the default MET calibration recommended in CMS."
@@ -18,7 +18,7 @@ keypoints:
 
 ## MET Corrections
 
-$$\vec{p}{T}^{miss, raw} = - \sum_{i \in all} \vec{p}_{T, i} $$
+$$\vec{p}_{T}^{miss,~raw} = - \sum_{i \in all} \vec{p}_{T, i} $$
 
 The MET objects described earlier (PF-MET and PUPPI-MET) are referred to as _raw_ MET, and they are systematically different from the _true_ MET, which corresponds to the transverse momentum carried by invisible particles.
 This difference arises from factors such as the non-compensating nature of the calorimeters, calorimeter thresholds, and detector misalignment, among others.
@@ -32,7 +32,7 @@ It propagates the jet energy corrections (JEC) to MET. Specifically, the Type-I 
 
 Particles can be classified into two disjoint sets: those that are clustered as jets and those that remain unclustered.
 
-$$\vec{p}{T}^{miss, raw} = - \sum_{i \in jets} \vec{p}_{T, i} - \sum_{i \in uncl} \vec{p}_{T, i}$$
+$$\vec{p}_{T}^{miss,~raw} = - \sum_{i \in jets} \vec{p}_{T, i} - \sum_{i \in uncl} \vec{p}_{T, i}$$
 
 The first vector sum corresponds to the total pT of all jets:
 
@@ -50,14 +50,14 @@ $$C_{T}^{Type-1} = \sum_{i \in jets} \vec{p}_{T, i} - \sum_{i}^{nJets} \vec{p}_{
 
 This vector term can be added to the raw MET to obtain the Type-1 corrected MET:
 
-$$\vec{p}{T}^{miss, Type-1} = \vec{p}{T}^{miss, raw} + C_{T}^{Type-1}$$
+$$\vec{p}_{T}^{miss,~Type-1} = \vec{p}_{T}^{miss,~raw} + C_{T}^{Type-1}$$
 
 Thus, the Type-I corrected MET is:
 
-$$\vec{p}{T}^{miss, Type-1} = \vec{p}{T}^{miss, raw} - \sum_{i}^{nJets} (\vec{p}_{T, jet}^{corr} - \vec{p}_{T, jet}^{uncorr}) $$
+$$\vec{p}_{T}^{miss,~Type-1} = \vec{p}_{T}^{miss,~raw} - \sum_{i}^{nJets} (\vec{p}_{T, jet}^{corr} - \vec{p}_{T, jet}^{uncorr}) $$
 
 
-$$\vec{p}{T}^{miss, Type-1} = - \sum_{i}^{nJets} \vec{p}_{T, jet}^{corr} - \sum_{i \in uncl} \vec{p}_{T, i}$$
+$$\vec{p}_{T}^{miss,~Type-1} = - \sum_{i}^{nJets} \vec{p}_{T, jet}^{corr} - \sum_{i \in uncl} \vec{p}_{T, i}$$
 
 > ## Remember
 > PF MET is the recommended MET algorithm in Run~2, and PUPPI MET is recommended for Run~3 analyses.
@@ -66,9 +66,7 @@ $$\vec{p}{T}^{miss, Type-1} = - \sum_{i}^{nJets} \vec{p}_{T, jet}^{corr} - \sum_
 
 ### Type-1 Smear MET (For MC Only)
 
-In MC simulations, jets are smeared to achieve better agreement with data. This smearing of _MC jets_ can additionally be propagated to MET, resulting in **Type-1 smear MET**. The Type-I smeared MET can be written as:
-
-$$\vec{p}{T}^{miss, Type-1} = - \sum_{i \in nJets} \vec{p}_{T, i}^{JEC+JER} - \sum_{i \in uncl} \vec{p}_{T, i}$$
+In MC simulations, jets are smeared to achieve better agreement with data. This smearing of _MC jets_ can additionally be propagated to MET, resulting in **Type-1 smear MET**.
 
 ### XY corrections
 The XY correction reduces the MET $\phi$ modulation. This correction also helps mitigate pile-up effects.
