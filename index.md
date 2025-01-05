@@ -50,7 +50,7 @@ Join the [ShortExMET Mattermost channel](https://mattermost.web.cern.ch/cmsdaslp
 
 > ## Prerequisites
 > - [CMS DAS Pre-exercises](https://fnallpc.github.io/cms-das-pre-exercises/)
-> - [Jets ans Pileup short excercise](https://cms-jet.github.io/JMEDAS/) 
+> - [Jets and Pileup short excercise](https://cms-jet.github.io/JMEDAS/) 
 {: .prereq}
 
 {% include links.md %}
