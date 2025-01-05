@@ -73,16 +73,20 @@ or equivalently:
 
 $$\vec{p}_{T}^{~miss,~Type-1} = - \sum_{i}^{nJets} \vec{p}_{T, jet}^{~corr} - \sum_{i \in uncl} \vec{p}_{T, i}$$
 
-<img src="../fig/episode2/raw_vs_type1.png" alt="" style="width:60%">
+
+<figure>
+  <img src="../fig/episode2/raw_vs_type1.png" alt="" style="width:60%">
+  <center><figcaption>We will revisit this in MET perfornce, but this plot shows the MET scale for raw PF MET vs Type-1 PF MET.</figcaption></center>
+</figure>
+
+### Type-1 Smear MET (For MC only)
+
+In MC simulations, jets are smeared to achieve better agreement with data. This smearing of _MC jets_ can additionally be propagated to MET, resulting in **Type-1 smear MET**.
 
 > ## Remember
 > PF MET is the recommended MET algorithm in Run~2, and PUPPI MET is recommended for Run~3 analyses.
 > Type-I corrected MET is the default MET calibration required in all analyses.
 {: .callout}
-
-### Type-1 Smear MET (For MC only)
-
-In MC simulations, jets are smeared to achieve better agreement with data. This smearing of _MC jets_ can additionally be propagated to MET, resulting in **Type-1 smear MET**.
 
 ### XY corrections
 The XY correction reduces the MET $\phi$ modulation. This correction also helps mitigate pile-up effects.
@@ -192,9 +196,8 @@ root -l 'cmsdasmetplotsexercise2.C("step2a")'
 ~~~
 {: .language-bash}
 
-> ## Looking at the different MET calibration algorithms
-> <img src="../fig/episode2/Figure_2p2.png" alt="" style="width:50%">
-> What do you observe?
+> ## What do you observe looking at the different MET calibration algorithms
+> <img src="../fig/episode2/Figure_2p2.png" alt="" style="width:25%">
 {: .discussion}
 
 ## Exercise 2.3
@@ -206,9 +209,8 @@ root -l 'cmsdasmetplotsexercise2.C("step2b")'
 ~~~
 {: .language-bash}
 
-> ## Looking at the different sources of MET uncertaintu
-> <img src="../fig/episode2/Figure_2p3.png" alt="" style="width:50%">
-> What do you observe?
+> ## What do you observe looking at the different sources of MET uncertaintu
+> <img src="../fig/episode2/Figure_2p3.png" alt="" style="width:25%">
 {: .discussion}
 
 
