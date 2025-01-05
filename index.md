@@ -49,8 +49,8 @@ Join the [ShortExMET Mattermost channel](https://mattermost.web.cern.ch/cmsdaslp
 {% comment %} This is a comment in Liquid {% endcomment %}
 
 > ## Prerequisites
->
-> [CMS DAS Pre-exercises](https://fnallpc.github.io/cms-das-pre-exercises/) 
+> - [CMS DAS Pre-exercises](https://fnallpc.github.io/cms-das-pre-exercises/)
+> - [Jets and Pileup short excercise](https://cms-jet.github.io/JMEDAS/) 
 {: .prereq}
 
 {% include links.md %}

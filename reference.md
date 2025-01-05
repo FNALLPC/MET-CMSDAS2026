@@ -2,9 +2,9 @@
 layout: reference
 ---
 
-## Jet Resources
+## JetMET Resources
 
-### JetMET - Physics Object Group (POG) dedicated to jet and missing transverse momentum performance
+### JME - Physics Object Group (POG) dedicated to jet and missing transverse momentum performance
 
  * [TWiki](https://twiki.cern.ch/twiki/bin/view/CMS/JetMET)
  * [cms-talk](https://cms-talk.web.cern.ch/c/physics/jme/51)
@@ -25,7 +25,7 @@ layout: reference
 
 ### FNAL LPC Resources
 
- * [Weekly Run 2 Discussion Groups](https://indico.cern.ch/category/7082/)
+ * [LPC Physics Analysis Discussion](https://indico.cern.ch/category/7082/)
  * [Hands-On Advanced Tutorial Sessions (HATS)](https://indico.cern.ch/category/371/) (long versions of these exercises each summer, already remote/recorded in June 2020)
 
 ### Other useful links
