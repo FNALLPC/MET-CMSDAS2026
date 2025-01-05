@@ -5,11 +5,11 @@ exercises: 10
 questions:
 - "Why do we need to calibrate MET? How is the performance measured?"
 - "What are the different ways of calibrating MET at CMS?"
-- "What is MET-$\phi$ modulation? How to correct for it?"
+- "What is MET phi modulation? How to correct for it?"
 objectives:
 - "Learn about the MET calibration procedure and techniques used at CMS."
 - "Learn about measuring MET performance."
-- "Understand MET-$\phi$ modulation and how to account for it."
+- "Understand MET phi modulation and how to account for it."
 keypoints:
 - "Inaccurate MET estimation can arise from sources such as nonlinearity in the calorimeter's response to hadrons, minimum energy thresholds in the calorimeters, and pT thresholds or inefficiencies in track reconstruction, and is mitigated through calibration procedures described in this exercise."
 - "Type-1 MET is the default MET calibration recommended in CMS."
