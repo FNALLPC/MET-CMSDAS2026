@@ -65,9 +65,14 @@ root -l 'cmsdasmetplotsexercise3.C("step3_scale_pfraw")'
 ~~~
 {: .language-bash}
 
-> ### Question 3.1 (a)
+> ## Question 3.1 (a)
 > For a fully calibrated MET object, what behavior would you expect to see in the distribution?
 {: .challenge}
+
+> ## Solution 3.1 (a)
+> <img src="../fig/episode3/Figure_3p1a.png" alt="" style="width:35%">
+> For a fully calibrated MET object, the scale is expected to be approximately 1, indicating an accurate representation of the true missing transverse energy with minimal systematic bias.
+{: .solution}
 
 Next, measure the MET scale using the Type-1 calibrated MET. Run the following commands:
 ~~~
@@ -76,9 +81,13 @@ root -l 'cmsdasmetplotsexercise3.C("step3_scale_pftype1")'
 ~~~
 {: .language-bash}
 
-> ### Question 3.1 (b)
+> ## Question 3.1 (b)
 > Compare the distributions of "Raw" and "Type-1" PF MET. Do you understand why there is a "turn-on" effect for Type-1 PFMET?
 {: .challenge}
+
+> ## Solution 3.1 (b)
+> <img src="../fig/episode3/Figure_3p1b.png" alt="" style="width:35%">
+{: .solution}
 
 ---
 
@@ -93,15 +102,72 @@ root -l 'cmsdasmetplotsexercise3.C("step3_resolution_pftype1")'
 
 This command will generate distributions showing the resolution of the parallel ($u_{\parallel}$) and perpendicular ($u_{\perp}$) components of MET with respect to pT(Z) and pileup. 
 
-> ### Question 3.2
+> ## Question 3.2
 > How does the MET resolution depend on pileup?
 {: .challenge}
 
 > ## Solution 3.2
 > The MET resolution degrades significantly as pileup increases, with an average deterioration of approximately 4 GeV per additional pileup vertex.
+>  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 5px;">
+>  <figure style="margin: 0; text-align: center; width: 45%;">
+>    <img src="../fig/episode3/Figure_3p2a.png" alt="W boson candidate event" style="width: 100%;">
+>  </figure>
+>  <figure style="margin: 0; text-align: center; width: 45%;">
+>    <img src="../fig/episode3/Figure_3p2b.png" alt="Dark matter search event" style="width: 100%;">
+>  </figure>
+>  <figure style="margin: 0; text-align: center; width: 45%;">
+>    <img src="../fig/episode3/Figure_3p2c.png" alt="Z boson candidate event" style="width: 100%;">
+>  </figure>
+>  <figure style="margin: 0; text-align: center; width: 45%;">
+>    <img src="../fig/episode3/Figure_3p2d.png" alt="Exotic particle search event" style="width: 100%;">
+>  </figure>
+>  </div>
 {: .solution}
 
 For more detailed insights, refer to the CMS MET paper based on 13 TeV data: [CMS-JME-17-001](https://arxiv.org/abs/1903.06078).
+
+## Exercise 3.3
+Equipped with the ability to evaluate MET performance through scale and resolution, we now aim to compare Type-1 PF MET with Type-1 PUPPI MET. **Starting from Run 3, Type-1 PUPPI MET is the default MET algorithm in CMS.** In this example, we will examine the performance of PF MET and PUPPI MET by comparing their scale and resolution.
+
+To generate the corresponding plots, use the following command:
+~~~
+cd $CMSSW_BASE/src/CMSDAS_MET/scripts
+root -l -q 'cmsdasmetplotsexercise4.C'
+~~~
+{: .language-bash}
+
+This might take a few minutes to process.
+
+> ## Question 3.3 (a)
+> Compare the correlation between Type1 PFMET and Puppi MET. What do you observe?
+{: .challenge}
+
+> ## Solution 3.3 (a)
+> <img src="../fig/episode3/Figure_3p3a.png" alt="" style="width:35%">
+{: .solution}
+
+> ## Question 3.3 (b)
+> Compare the scale and resolution between Type1 PFMET and Puppi MET, especially the resolution as a function of $$N_{vtx}$$. What do you observe?
+{: .challenge}
+
+> ## Solution 3.3 (b)
+>  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 5px;">
+>  <figure style="margin: 0; text-align: center; width: 45%;">
+>    <img src="../fig/episode3/Figure_3p3b1.png" alt="W boson candidate event" style="width: 100%;">
+>  </figure>
+>  <figure style="margin: 0; text-align: center; width: 45%;">
+>    <img src="../fig/episode3/Figure_3p3b2.png" alt="Dark matter search event" style="width: 100%;">
+>  </figure>
+>  <figure style="margin: 0; text-align: center; width: 45%;">
+>    <img src="../fig/episode3/Figure_3p3b3.png" alt="Z boson candidate event" style="width: 100%;">
+>  </figure>
+>  <figure style="margin: 0; text-align: center; width: 45%;">
+>    <img src="../fig/episode3/Figure_3p3b4.png" alt="Exotic particle search event" style="width: 100%;">
+>  </figure>
+>  </div>
+> Significantly improved MET resolution as a function of $$N_{vtx}$$ compared to PFMET.
+> PUPPI-MET has 2x smaller degradation in resolution compared to PFMET.
+{: .solution}
 
 
 {% include links.md %}

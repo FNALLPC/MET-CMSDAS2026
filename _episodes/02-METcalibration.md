@@ -222,47 +222,5 @@ root -l -q 'cmsdasmetplotsexercise2.C("step2b")'
 > <img src="../fig/episode2/Figure_2p3.png" alt="" style="width:35%">
 {: .solution}
 
-## Exercise 2.4
-Starting Run 3 Type-1 PUPPI MET is the default MET algorithm. In the following example we will compare the performance [scale and resolution, discussed in detail in Episode 3] of PF-MET and Puppi-MET.
-To generate the corresponding plot, use the following command:
-~~~
-cd $CMSSW_BASE/src/CMSDAS_MET/scripts
-root -l -q 'cmsdasmetplotsexercise4.C'
-~~~
-{: .language-bash}
-
-This might take a few minutes to process.
-
-> ## Question 2.4 (a)
-> Compare the correlation between Type1 PFMET and Puppi MET. What do you observe?
-{: .challenge}
-
-> ## Solution 2.4 (a)
-> <img src="../fig/episode2/Figure_2p4a.png" alt="" style="width:35%">
-{: .solution}
-
-> ## Question 2.4 (b)
-> Compare the scale and resolution between Type1 PFMET and Puppi MET, especially the resolution as a function of $$N_{vtx}$$. What do you observe?
-{: .challenge}
-
-> ## Solution 2.4 (b)
->  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 5px;">
->  <figure style="margin: 0; text-align: center; width: 45%;">
->    <img src="../fig/episode2/Figure_2p4b1.png" alt="W boson candidate event" style="width: 100%;">
->  </figure>
->  <figure style="margin: 0; text-align: center; width: 45%;">
->    <img src="../fig/episode2/Figure_2p4b2.png" alt="Dark matter search event" style="width: 100%;">
->  </figure>
->  <figure style="margin: 0; text-align: center; width: 45%;">
->    <img src="../fig/episode2/Figure_2p4b3.png" alt="Z boson candidate event" style="width: 100%;">
->  </figure>
->  <figure style="margin: 0; text-align: center; width: 45%;">
->    <img src="../fig/episode2/Figure_2p4b4.png" alt="Exotic particle search event" style="width: 100%;">
->  </figure>
->  </div>
-> Significantly improved MET resolution as a function of $$N_{vtx}$$ compared to PFMET.
-> PUPPI-MET has 2x smaller degradation in resolution compared to PFMET.
-{: .solution}
-
 
 {% include links.md %}
