@@ -84,7 +84,7 @@ $$\vec{p}_{T}^{~miss,~Type-1} = - \sum_{i}^{nJets} \vec{p}_{T, jet}^{~corr} - \s
 In MC simulations, jets are smeared to achieve better agreement with data. This smearing of _MC jets_ can additionally be propagated to MET, resulting in **Type-1 smear MET**.
 
 > ## Remember
-> PF MET is the recommended MET algorithm in Run~2, and PUPPI MET is recommended for Run~3 analyses.
+> PF MET is the recommended MET algorithm in Run 2, and PUPPI MET is recommended for Run 3 analyses.
 > Type-I corrected MET is the default MET calibration required in all analyses.
 {: .callout}
 
@@ -209,8 +209,29 @@ root -l 'cmsdasmetplotsexercise2.C("step2b")'
 ~~~
 {: .language-bash}
 
-> ## What do you observe looking at the different sources of MET uncertaintu
+> ## What do you observe looking at the different sources of MET uncertainty
 > <img src="../fig/episode2/Figure_2p3.png" alt="" style="width:25%">
+{: .discussion}
+
+## Exercise 2.4
+Starting Run 3 Type-1 PUPPI MET is the default MET algorithm. In the following example we will compare the performance [scale and resolution, discussed in detail in Episode 3] of PF-MET and Puppi-MET.
+To generate the corresponding plot, use the following command:
+~~~
+cd $CMSSW_BASE/src/CMSDAS_MET/scripts
+root -l 'cmsdasmetplotsexercise4.C'
+~~~
+{: .language-bash}
+
+This might take a few minutes to process.
+
+> ## Compare the correlation between Type1 PFMET and Puppi MET
+> <img src="../fig/episode2/Figure_2p4a.png" alt="" style="width:25%">
+{: .discussion}
+
+> ## Compare the scale and resolution between Type1 PFMET and Puppi MET, especially the resolution as a function of $$N_{vtx}$$
+> <img src="../fig/episode2/Figure_2p4b.png" alt="" style="width:25%">
+> Significantly improved MET resolution as a function of $$N_{vtx}$$ compared to PFMET.
+> PUPPI-MET has 2x smaller degradation in resolution compared to PFMET
 {: .discussion}
 
 
