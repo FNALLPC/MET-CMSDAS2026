@@ -1,7 +1,7 @@
 ---
 title: "MET performance"
-teaching: 40
-exercises: 20
+teaching: 20
+exercises: 10
 questions:
 - "How do we measure the MET performance (i.e. MET scale and MET resolution) ?"
 objectives:
@@ -12,11 +12,10 @@ keypoints:
 - "Transverse momentum conservation is used to study MET response and resolution along z-axis."
 ---
 
-> ## After following the instructions in the setup, make sure you are using the SLC7 singularity shell:
+> ## After following the instructions in the setup, make sure you have the CMS environment:
 >
 > ~~~
 > cd $CMSSW_BASE/src/CMSDAS_MET
-> cmssw-el7
 > cmsenv
 > ~~~
 > {: .language-bash}
@@ -61,7 +60,7 @@ In this exercise, we will measure the scale of the "uncorrected" (raw) PF MET as
 To start, run the following commands:
 ~~~
 cd $CMSSW_BASE/src/CMSDAS_MET/scripts
-root -l 'cmsdasmetplotsexercise3.C("step3_scale_pfraw")'
+root -l -q 'cmsdasmetplotsexercise3.C("step3_scale_pfraw")'
 ~~~
 {: .language-bash}
 
@@ -77,7 +76,7 @@ root -l 'cmsdasmetplotsexercise3.C("step3_scale_pfraw")'
 Next, measure the MET scale using the Type-1 calibrated MET. Run the following commands:
 ~~~
 cd $CMSSW_BASE/src/CMSDAS_MET/scripts
-root -l 'cmsdasmetplotsexercise3.C("step3_scale_pftype1")'
+root -l -q 'cmsdasmetplotsexercise3.C("step3_scale_pftype1")'
 ~~~
 {: .language-bash}
 
@@ -96,7 +95,7 @@ root -l 'cmsdasmetplotsexercise3.C("step3_scale_pftype1")'
 Now, let’s analyze the resolution of MET as a function of pT(Z) and the number of pileup vertices. To do this, run:
 ~~~
 cd $CMSSW_BASE/src/CMSDAS_MET/scripts
-root -l 'cmsdasmetplotsexercise3.C("step3_resolution_pftype1")'
+root -l -q 'cmsdasmetplotsexercise3.C("step3_resolution_pftype1")'
 ~~~
 {: .language-bash}
 
@@ -108,6 +107,7 @@ This command will generate distributions showing the resolution of the parallel 
 
 > ## Solution 3.2
 > The MET resolution degrades significantly as pileup increases, with an average deterioration of approximately 4 GeV per additional pileup vertex.
+>
 >  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 5px;">
 >  <figure style="margin: 0; text-align: center; width: 45%;">
 >    <img src="../fig/episode3/Figure_3p2a.png" alt="W boson candidate event" style="width: 100%;">
@@ -151,6 +151,9 @@ This might take a few minutes to process.
 {: .challenge}
 
 > ## Solution 3.3 (b)
+> Significantly improved MET resolution as a function of $$N_{vtx}$$ compared to PFMET.
+> PUPPI-MET has 2x smaller degradation in resolution compared to PFMET.
+>
 >  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 5px;">
 >  <figure style="margin: 0; text-align: center; width: 45%;">
 >    <img src="../fig/episode3/Figure_3p3b1.png" alt="W boson candidate event" style="width: 100%;">
@@ -165,8 +168,6 @@ This might take a few minutes to process.
 >    <img src="../fig/episode3/Figure_3p3b4.png" alt="Exotic particle search event" style="width: 100%;">
 >  </figure>
 >  </div>
-> Significantly improved MET resolution as a function of $$N_{vtx}$$ compared to PFMET.
-> PUPPI-MET has 2x smaller degradation in resolution compared to PFMET.
 {: .solution}
 
 

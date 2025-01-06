@@ -19,11 +19,10 @@ keypoints:
 - "MET is influenced by uncertainties from all contributing objects, including jets, leptons, photons, and unclustered energy. Systematic variations in the scale and resolution of each component must be propagated to the MET calculation to evaluate their impact on the analysis."
 ---
 
-> ## After following the instructions in the setup, make sure you are using the SLC7 singularity shell:
+> ## After following the instructions in the setup, make sure you have the CMS environment:
 >
 > ~~~
 > cd $CMSSW_BASE/src/CMSDAS_MET
-> cmssw-el7
 > cmsenv
 > ~~~
 > {: .language-bash}

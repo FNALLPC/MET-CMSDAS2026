@@ -13,11 +13,10 @@ keypoints:
 - "Events with anomalos mets can be rejected using the Noisy event filters."
 ---
 
-> ## After following the instructions in the setup, make sure you are using the SLC7 singularity shell:
+> ## After following the instructions in the setup, make sure you have the CMS environment:
 >
 > ~~~
 > cd $CMSSW_BASE/src/CMSDAS_MET
-> cmssw-el7
 > cmsenv
 > ~~~
 > {: .language-bash}
@@ -40,6 +39,41 @@ To identify false MET, several algorithms have been developed that analyze facto
 When fake MET is detected, the corresponding events are typically discarded.
 These cleaning algorithms, or filters, run in separate processing paths, and the outcome (success or failure) is recorded as a filter decision bit.
 Analyzers can use this decision bit to filter out noisy events. These filters are specifically designed to reject events with unusually large MET values caused by spurious signals.
+
+## Excercise 4
+
+Noisy event filters (previously called MET Filters) are stored as trigger results, specifically in edm::TriggerResults of the RECO or PAT process. Each MET filter runs in a separate path, and the success or failure of the path is recorded as a filter decision bit. For more information, please refer to the provided [link](https://twiki.cern.ch/twiki/bin/viewauth/CMS/MissingETOptionalFiltersRun2).
+
+In this exercise, we will show how to access the MET Filters in miniAOD. Please run the following commands:
+~~~
+cd $CMSSW_BASE/src/CMSDAS_MET
+cmsRun CMSDAS_MET_Analysis/test/run_CMSDAS_MET_Exercise5_cfg.py
+~~~
+{: .language-bash}
+
+This example accesses the decision bits for the following MET Filters: `Beam Halo`, `HBHE`, `HBHE (Iso)`, `Ecal Trigger Primitives`, `EE SuperCluster`, `Bad Charged Hadron`, and `Bad PF Muon`. A "true" decision means the event was not rejected by the filter. The analyzer used in this example is CMSDAS_MET_Analysis/plugins/CMSDAS_MET_AnalysisExercise5.cc. The printed result will look like this:
+
+~~~
+Begin processing the 1st record. Run 317626, Event 178458435, LumiSection 134 on stream 0 at 28-Jun-2020 10:39:20.656 CDT
+MET Filters decision:
+ HBHE = 1
+ HBHE (Iso) = 1
+ Beam Halo = 1
+ Ecal TP = 1
+ EE SuperCluster = 1
+ Bad Charged Hadron = 1
+ Bad PF Muon = 1
+.......
+.......
+~~~
+{: .language-bash}
+
+> ## Question 4 (a)
+> To see the output for a bad event, modify the input file in CMSDAS_MET_Analysis/test/run_CMSDAS_MET_Exercise5_cfg.py.
+> Comment out the line for the first input file (cmsdas_met_METFilters1.root) and uncomment the line for the second input file (cmsdas_met_METFilters2.root).
+> Then run the code again. What changes do you notice?
+{: .challenge}
+
 
 {% include links.md %}
 

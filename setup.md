@@ -24,10 +24,9 @@ cd METDAS
 Once you are there you can setup CMSSW and clone our repository:
 
 ~~~
-cmssw-el7
 source /cvmfs/cms.cern.ch/cmsset_default.sh
-cmsrel CMSSW_12_4_11_patch3
-cd CMSSW_12_4_11_patch3/src
+cmsrel CMSSW_14_0_7
+cd CMSSW_14_0_7/src
 cmsenv
 
 git clone git@github.com:garvitaa/METDAS.git -b DASJan2025
