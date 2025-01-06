@@ -22,7 +22,7 @@ keypoints:
 > ## After following the instructions in the setup, make sure you have the CMS environment:
 >
 > ~~~
-> cd $CMSSW_BASE/src/CMSDAS_MET
+> cd $CMSSW_BASE/src/METDAS
 > cmsenv
 > ~~~
 > {: .language-bash}
@@ -137,7 +137,7 @@ We will use the same file as in [Exercise 1.1](https://garvitaa.github.io/METDAS
 Execute the following commands inside the `cmssw-el7` singularity shell:
 
 ~~~
-cd $CMSSW_BASE/src/CMSDAS_MET
+cd $CMSSW_BASE/src/METDAS
 cmsRun CMSDAS_MET_Analysis/test/run_CMSDAS_MET_Exercise2_cfg.py
 ~~~
 {: .language-bash}
@@ -190,7 +190,7 @@ Once the process completes (it will take a few seconds), it will produce a ROOT 
 To generate the plot, run the following commands:
 
 ~~~
-cd $CMSSW_BASE/src/CMSDAS_MET/scripts
+cd $CMSSW_BASE/src/METDAS/scripts
 root -l -q 'cmsdasmetplotsexercise2.C("step2a")'
 ~~~
 {: .language-bash}
@@ -208,7 +208,7 @@ Next, we will focus on Type-1 PF MET and study the impact of various uncertainti
 To generate the corresponding plot, use the following command:
 
 ~~~
-cd $CMSSW_BASE/src/CMSDAS_MET/scripts
+cd $CMSSW_BASE/src/METDAS/scripts
 root -l -q 'cmsdasmetplotsexercise2.C("step2b")'
 ~~~
 {: .language-bash}

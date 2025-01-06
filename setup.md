@@ -35,7 +35,7 @@ scram b -j4
 {: .language-bash}
 
 > ## Remember
-> Once you clone the repository, using the `DASJan2025` branch, the necessary scripts for this lesson are located in `CMSDAS_MET/CMSDAS_MET_Analysis/test` and `CMSDAS_MET/scripts`.
+> Once you clone the repository, using the `DASJan2025` branch, the necessary scripts for this lesson are located in `METDAS/CMSDAS_MET_Analysis/test` and `METDAS/scripts`.
 {: .callout}
 
 Activate your grid certificate:
