@@ -196,9 +196,13 @@ root -l 'cmsdasmetplotsexercise2.C("step2a")'
 ~~~
 {: .language-bash}
 
-> ## What do you observe looking at the different MET calibration algorithms
-> <img src="../fig/episode2/Figure_2p2.png" alt="" style="width:25%">
-{: .discussion}
+> ## Question 2.2
+> What do you observe looking at the different MET calibration algorithms?
+{: .challenge}
+
+> ## Solution 2.2
+> <img src="../fig/episode2/Figure_2p2.png" alt="" style="width:35%">
+{: .solution}
 
 ## Exercise 2.3
 Next, we will focus on Type-1 PF MET and study the impact of various uncertainties, including Unclustered, JES, and JER.
@@ -209,9 +213,13 @@ root -l 'cmsdasmetplotsexercise2.C("step2b")'
 ~~~
 {: .language-bash}
 
-> ## What do you observe looking at the different sources of MET uncertainty
-> <img src="../fig/episode2/Figure_2p3.png" alt="" style="width:25%">
-{: .discussion}
+> ## Question 2.3
+> What do you observe looking at the different sources of MET uncertainty?
+{: .challenge}
+
+> ## Solution 2.3
+> <img src="../fig/episode2/Figure_2p3.png" alt="" style="width:35%">
+{: .solution}
 
 ## Exercise 2.4
 Starting Run 3 Type-1 PUPPI MET is the default MET algorithm. In the following example we will compare the performance [scale and resolution, discussed in detail in Episode 3] of PF-MET and Puppi-MET.
@@ -224,15 +232,23 @@ root -l 'cmsdasmetplotsexercise4.C'
 
 This might take a few minutes to process.
 
-> ## Compare the correlation between Type1 PFMET and Puppi MET
-> <img src="../fig/episode2/Figure_2p4a.png" alt="" style="width:25%">
-{: .discussion}
+> ## Question 2.4 (a)
+> Compare the correlation between Type1 PFMET and Puppi MET. What do you observe?
+{: .challenge}
 
-> ## Compare the scale and resolution between Type1 PFMET and Puppi MET, especially the resolution as a function of $$N_{vtx}$$
-> <img src="../fig/episode2/Figure_2p4b.png" alt="" style="width:25%">
+> ## Solution 2.4 (a)
+> <img src="../fig/episode2/Figure_2p4a.png" alt="" style="width:35%">
+{: .solution}
+
+> ## Question 2.4 (b)
+> Compare the scale and resolution between Type1 PFMET and Puppi MET, especially the resolution as a function of $$N_{vtx}$$. What do you observe?
+{: .challenge}
+
+> ## Solution 2.4 (b)
+> <img src="../fig/episode2/Figure_2p4b.png" alt="" style="width:35%">
 > Significantly improved MET resolution as a function of $$N_{vtx}$$ compared to PFMET.
-> PUPPI-MET has 2x smaller degradation in resolution compared to PFMET
-{: .discussion}
+> PUPPI-MET has 2x smaller degradation in resolution compared to PFMET.
+{: .solution}
 
 
 {% include links.md %}
