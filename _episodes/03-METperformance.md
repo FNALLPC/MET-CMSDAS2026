@@ -54,9 +54,54 @@ Use the distribution of the parallel and perpendicular components of the hadroni
 - Get the mean of the parallel component to estimate MET scale.
 - The RMS of the distributions gives the MET resolution in each direction.
 
-### MET Scale
+## Exercise 3.1: MET Scale
 
-### MET resolution
+In this exercise, we will measure the scale of the "uncorrected" (raw) PF MET as a function of the transverse momentum of the Z boson (pT(Z)).
+
+To start, run the following commands:
+~~~
+cd $CMSSW_BASE/src/CMSDAS_MET/scripts
+root -l 'cmsdasmetplotsexercise3.C("step3_scale_pfraw")'
+~~~
+{: .language-bash}
+
+> ### Question 3.1 (a)
+> For a fully calibrated MET object, what behavior would you expect to see in the distribution?
+{: .challenge}
+
+Next, measure the MET scale using the Type-1 calibrated MET. Run the following commands:
+~~~
+cd $CMSSW_BASE/src/CMSDAS_MET/scripts
+root -l 'cmsdasmetplotsexercise3.C("step3_scale_pftype1")'
+~~~
+{: .language-bash}
+
+> ### Question 3.1 (b)
+> Compare the distributions of "Raw" and "Type-1" PF MET. Do you understand why there is a "turn-on" effect for Type-1 PFMET?
+{: .challenge}
+
+---
+
+## Exercise 3.2: MET Resolution
+
+Now, let’s analyze the resolution of MET as a function of pT(Z) and the number of pileup vertices. To do this, run:
+~~~
+cd $CMSSW_BASE/src/CMSDAS_MET/scripts
+root -l 'cmsdasmetplotsexercise3.C("step3_resolution_pftype1")'
+~~~
+{: .language-bash}
+
+This command will generate distributions showing the resolution of the parallel ($u_{\parallel}$) and perpendicular ($u_{\perp}$) components of MET with respect to pT(Z) and pileup. 
+
+> ### Question 3.2
+> How does the MET resolution depend on pileup?
+{: .challenge}
+
+> ## Solution 3.2
+> The MET resolution degrades significantly as pileup increases, with an average deterioration of approximately 4 GeV per additional pileup vertex.
+{: .solution}
+
+For more detailed insights, refer to the CMS MET paper based on 13 TeV data: [CMS-JME-17-001](https://arxiv.org/abs/1903.06078).
 
 
 {% include links.md %}

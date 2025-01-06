@@ -191,8 +191,8 @@ Once the process completes (it will take a few seconds), it will produce a ROOT 
 To generate the plot, run the following commands:
 
 ~~~
-cd scripts
-root -l 'cmsdasmetplotsexercise2.C("step2a")'
+cd $CMSSW_BASE/src/CMSDAS_MET/scripts
+root -l -q 'cmsdasmetplotsexercise2.C("step2a")'
 ~~~
 {: .language-bash}
 
@@ -209,7 +209,8 @@ Next, we will focus on Type-1 PF MET and study the impact of various uncertainti
 To generate the corresponding plot, use the following command:
 
 ~~~
-root -l 'cmsdasmetplotsexercise2.C("step2b")'
+cd $CMSSW_BASE/src/CMSDAS_MET/scripts
+root -l -q 'cmsdasmetplotsexercise2.C("step2b")'
 ~~~
 {: .language-bash}
 
@@ -226,7 +227,7 @@ Starting Run 3 Type-1 PUPPI MET is the default MET algorithm. In the following e
 To generate the corresponding plot, use the following command:
 ~~~
 cd $CMSSW_BASE/src/CMSDAS_MET/scripts
-root -l 'cmsdasmetplotsexercise4.C'
+root -l -q 'cmsdasmetplotsexercise4.C'
 ~~~
 {: .language-bash}
 
@@ -245,7 +246,20 @@ This might take a few minutes to process.
 {: .challenge}
 
 > ## Solution 2.4 (b)
-> <img src="../fig/episode2/Figure_2p4b.png" alt="" style="width:35%">
+>  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 5px;">
+>  <figure style="margin: 0; text-align: center; width: 45%;">
+>    <img src="../fig/episode2/Figure_2p4b1.png" alt="W boson candidate event" style="width: 100%;">
+>  </figure>
+>  <figure style="margin: 0; text-align: center; width: 45%;">
+>    <img src="../fig/episode2/Figure_2p4b2.png" alt="Dark matter search event" style="width: 100%;">
+>  </figure>
+>  <figure style="margin: 0; text-align: center; width: 45%;">
+>    <img src="../fig/episode2/Figure_2p4b3.png" alt="Z boson candidate event" style="width: 100%;">
+>  </figure>
+>  <figure style="margin: 0; text-align: center; width: 45%;">
+>    <img src="../fig/episode2/Figure_2p4b4.png" alt="Exotic particle search event" style="width: 100%;">
+>  </figure>
+>  </div>
 > Significantly improved MET resolution as a function of $$N_{vtx}$$ compared to PFMET.
 > PUPPI-MET has 2x smaller degradation in resolution compared to PFMET.
 {: .solution}
