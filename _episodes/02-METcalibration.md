@@ -134,7 +134,7 @@ In this exercise, we will consider three sources of uncertainty:
 
 We will use the same file as in [Exercise 1.1](https://garvitaa.github.io/METDAS/01-MET101/index.html#exercise-11).
 
-Execute the following commands inside the `cmssw-el7` singularity shell:
+Execute the following commands inside the CMSSW environment created during setup:
 
 ~~~
 cd $CMSSW_BASE/src/METDAS
