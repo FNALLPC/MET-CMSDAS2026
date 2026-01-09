@@ -11,7 +11,7 @@
 carpentry: "swc"
 
 # Overall title for pages.
-title: "HATS@LPC 2025: MET"
+title: "HATS@LPC 2026: MET"
 
 # Life cycle stage of the lesson
 # See this page for more details: https://cdh.carpentries.org/the-lesson-life-cycle.html
@@ -44,7 +44,7 @@ kind: "lesson"
 # Magic to make URLs resolve both locally and on GitHub.
 # See https://help.github.com/articles/repository-metadata-on-github-pages/.
 # Please don't change it: <USERNAME>/<PROJECT> is correct.
-repository: garvitaa/METDAS
+repository: erdemyigit/MET-CMSDAS2026
 
 # Email address, no mailto:
 email: "cmstalk+jme@dovecotmta.cern.ch"

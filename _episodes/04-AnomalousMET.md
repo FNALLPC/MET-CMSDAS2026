@@ -76,7 +76,7 @@ MET Filters decision:
 > ## Solution 4
 > The event does not pass the `HBHE` filter and for an event to qualify it must pass **ALL** filters.
 > ```
-> Begin processing the 1st record. Run 317182, Event 1740596074, LumiSection 1226 on stream 0 at 06-Jan-2025 08:22:50.035 CST
+> Begin processing the 1st record. Run 317182, Event 1740596074, LumiSection 1226 on stream 0 at 06-Jan-2026 08:22:50.035 CST
 > MET Filters decision: 
 >  HBHE = 0
 >  HBHE (Iso) = 1

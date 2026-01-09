@@ -113,8 +113,8 @@ def check_language(language):
 def check_humandate(date):
     """
     'humandate' must be a human-readable date with a 3-letter month
-    and 4-digit year.  Examples include 'Feb 18-20, 2025' and 'Feb 18
-    and 20, 2025'.  It may be in languages other than English, but the
+    and 4-digit year.  Examples include 'Feb 18-20, 2026' and 'Feb 18
+    and 20, 2026'.  It may be in languages other than English, but the
     month name should be kept short to aid formatting of the main
     Carpentries web site.
     """
@@ -267,7 +267,7 @@ HANDLERS = {
 
     'humandate':  (True, check_humandate,
                    'humandate invalid. Please use three-letter months like ' +
-                   '"Jan" and four-letter years like "2025"'),
+                   '"Jan" and four-letter years like "2026"'),
 
     'humantime':  (True, check_humantime,
                    'humantime doesn\'t include numbers'),

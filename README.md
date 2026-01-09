@@ -1,4 +1,4 @@
-# CMS Data Analysis School 2025: MET Analysis Short Exercise 
+# CMS Data Analysis School 2026: MET Analysis Short Exercise 
 
 This repository generates the corresponding lesson website from [The Carpentries](https://carpentries.org/) repertoire of lessons. 
 

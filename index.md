@@ -35,14 +35,14 @@ _Follow the CMS workbook on MET analysis:_ [WorkBookMETAnalysis](https://twiki.c
 > * The exercises are designed to be run directly on CMSLPC, with scripts provided for you to follow and discuss the exercises.
 {: .testimonial}
 
-### Facilitators CMSDAS LPC 2025
+### Facilitators CMSDAS LPC 2026
 
 <img src="fig/photo_facilitators.pdf" alt="" style="width:80%">
 
 
 ### Support
 
-Join the [ShortExMET Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2025/channels/shortexmet) and don't hesitate to ask for help from the facilitators in the room.
+Join the [ShortExMET Mattermost channel](https://mattermost.web.cern.ch/cmsdaslpc2026/channels/shortexmet) and don't hesitate to ask for help from the facilitators in the room.
 
 
 <!-- this is an html comment -->

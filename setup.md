@@ -29,13 +29,13 @@ cmsrel CMSSW_14_0_7
 cd CMSSW_14_0_7/src
 cmsenv
 
-git clone git@github.com:garvitaa/METDAS.git -b DASJan2025
+git clone git@github.com:garvitaa/METDAS.git -b main
 scram b -j4
 ~~~
 {: .language-bash}
 
 > ## Remember
-> Once you clone the repository, using the `DASJan2025` branch, the necessary scripts for this lesson are located in `METDAS/CMSDAS_MET_Analysis/test` and `METDAS/scripts`.
+> Once you clone the repository, using the `main` branch, the necessary scripts for this lesson are located in `METDAS/CMSDAS_MET_Analysis/test` and `METDAS/scripts`.
 {: .callout}
 
 Activate your grid certificate:

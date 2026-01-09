@@ -150,7 +150,7 @@ Additionally, the script demonstrates how to access MET with different levels of
 
 The analyzer being run using is command is `CMSDAS_MET_Analysis/plugins/CMSDAS_MET_AnalysisExercise2.cc`. The printout looks like the following:
 ```
-Begin processing the 1st record. Run 1, Event 138728702, LumiSection 513811 on stream 0 at 05-Jan-2025 14:40:03.942 CST
+Begin processing the 1st record. Run 1, Event 138728702, LumiSection 513811 on stream 0 at 05-Jan-2026 14:40:03.942 CST
  MET : 
   pt [GeV] = 4.42979
   phi [rad] = 2.92774
