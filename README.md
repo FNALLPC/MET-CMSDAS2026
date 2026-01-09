@@ -4,12 +4,12 @@ This repository contains code use for several years for each CMS Data Analysis S
 
 ## For students
 
-If you want to follow the CMSDAS short MET exercise check the website: [http://erdemyigit.github.io/MET-CMSDAS2026/](http://erdemyigit.github.io/MET-CMSDAS2026/)
+If you want to follow the CMSDAS short MET exercise check the website: [http://FNALLPC.github.io/MET-CMSDAS2026/](http://FNALLPC.github.io/MET-CMSDAS2026/)
 
 The latest version of the school is on January 2026 and therefore use the branch `main`:
 
 ```
-git clone git@github.com:erdemyigit/MET-CMSDAS2026.git -b main
+git clone git@github.com:FNALLPC/MET-CMSDAS2026.git -b main
 ```
 
 
@@ -28,4 +28,4 @@ The website uses the [carpentry software](https://github.com/carpentries/styles/
 ### Introduction
 This tutorial is intended to provide you with the basic you need in order to deal with missing transverse energy in your analysis. We start with the basics of what is MET, how it is defined and calculated, what algorithms are used, etc. Then we give examples with scripts on how to access MET and use them in your analysis frameworks, including corrections and systematics. 
 
-The tutorial is designed to be executed at cmslpc and followed in the [METDAS 2026 website](http://erdemyigit.github.io/MET-CMSDAS2026), where you find links to instructional slides and instructions that walk you through the exercises.
+The tutorial is designed to be executed at cmslpc and followed in the [METDAS 2026 website](http://FNALLPC.github.io/MET-CMSDAS2026), where you find links to instructional slides and instructions that walk you through the exercises.
