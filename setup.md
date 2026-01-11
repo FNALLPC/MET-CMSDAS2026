@@ -29,7 +29,7 @@ cmsrel CMSSW_14_0_7
 cd CMSSW_14_0_7/src
 cmsenv
 
-git clone git@github.com:garvitaa/METDAS.git -b main
+git clone git@github.com:FNALLPC/MET-CMSDAS2026.git -b main
 scram b -j4
 ~~~
 {: .language-bash}
