@@ -16,7 +16,7 @@ keypoints:
 > ## After following the instructions in the setup, make sure you have the CMS environment:
 >
 > ~~~
-> cd $CMSSW_BASE/src/METDAS
+> cd $CMSSW_BASE/src/MET-CMSDAS2026
 > cmsenv
 > ~~~
 > {: .language-bash}
@@ -46,7 +46,7 @@ Noisy event filters (previously called MET Filters) are stored as trigger result
 
 In this exercise, we will show how to access the MET Filters in miniAOD. Please run the following commands:
 ~~~
-cd $CMSSW_BASE/src/METDAS
+cd $CMSSW_BASE/src/MET-CMSDAS2026
 cmsRun CMSDAS_MET_Analysis/test/run_CMSDAS_MET_Exercise5_cfg.py
 ~~~
 {: .language-bash}
