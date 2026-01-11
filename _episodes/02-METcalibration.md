@@ -167,7 +167,7 @@ Begin processing the 1st record. Run 1, Event 138728702, LumiSection 513811 on s
 ```
 
 > ## Question 2.1
-> Compare the distributions of the above quantities and get a feeling about their effect. Wheer are these distrucutions being stored?
+> Compare the distributions of the above quantities and get a feeling about their effect. Where are these distrucutions being stored?
 {: .challenge}
 
 > ## Solution 2.1
