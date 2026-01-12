@@ -75,7 +75,7 @@ $$\vec{p}_{T}^{~miss,~Type-1} = - \sum_{i}^{nJets} \vec{p}_{T, jet}^{~corr} - \s
 
 <figure>
   <img src="../fig/episode2/raw_vs_type1.png" alt="" style="width:60%">
-  <center><figcaption>We will revisit this in MET performance, but this figure shows a comarison between the MET scale for raw PF MET vs Type-1 PF MET.</figcaption></center>
+  <center><figcaption>We will revisit this in MET performance, but this figure shows a comparison between the MET scale for raw PF MET vs Type-1 PF MET.</figcaption></center>
 </figure>
 
 ### Type-1 Smear MET (For MC only)
