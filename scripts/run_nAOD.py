@@ -59,7 +59,7 @@ class ExampleAnalysis(Module):
 
 
 files=[
-    "root://cmsxrootd.fnal.gov//store/user/cmsdas/2021/short_exercises/METandPU/DYJetsToLL_M50_amcatnloFXFX_Nano.root",
+    "root://cmseos.fnal.gov//store/user/cmsdas/2021/short_exercises/METandPU/DYJetsToLL_M50_amcatnloFXFX_Nano.root",
 ]
 
 preselection="nMuon >= 2 && Muon_pt[0] > 25.0 && Muon_pt[1] > 25.0 && fabs(Muon_eta[0]) < 2.4 && fabs(Muon_eta[1]) < 2.4 && Muon_pfRelIso04_all[0] < 0.15 && Muon_pfRelIso04_all[1] < 0.15"

@@ -22,7 +22,7 @@ void cmsdasmetplotsexercise4() {
   setTDRStyle();
 
   TFile *f_ = TFile::Open(
-      "root://cmsxrootd.fnal.gov//store/user/cmsdas/2026/short_exercises/MET/cmsdas_met_exercise3.root",
+      "root://cmseos.fnal.gov//store/user/cmsdas/2026/short_exercises/MET/cmsdas_met_exercise3.root",
       "READONLY");
   // TTree *t_ = (TTree*)f_->Get("cmsdasmetexercise3/tree");
   TTree *t_ = (TTree *)f_->Get("metandpuanalstep3/tree");
