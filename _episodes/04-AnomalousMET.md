@@ -47,7 +47,7 @@ Noisy event filters (previously called MET Filters) are stored as trigger result
 In this exercise, we will show how to access the MET Filters in miniAOD. Please run the following commands:
 ~~~
 cd $CMSSW_BASE/src/MET-CMSDAS2026
-cmsRun CMSDAS_MET_Analysis/test/run_CMSDAS_MET_Exercise5_cfg.py
+cmsRun CMSDAS_MET_Analysis/test/run_CMSDAS_MET_Exercise4_cfg.py
 ~~~
 {: .language-bash}
 
@@ -68,7 +68,7 @@ MET Filters decision:
 ```
 
 > ## Question 4
-> To see the output for a bad event, modify the input file in `CMSDAS_MET_Analysis/test/run_CMSDAS_MET_Exercise5_cfg.py`.
+> To see the output for a bad event, modify the input file in `CMSDAS_MET_Analysis/test/run_CMSDAS_MET_Exercise4_cfg.py`.
 > Comment out the line for the first input file `cmsdas_met_METFilters1.root` and uncomment the line for the second input file `cmsdas_met_METFilters2.root`.
 > Then run the code again. What changes do you notice?
 {: .challenge}
