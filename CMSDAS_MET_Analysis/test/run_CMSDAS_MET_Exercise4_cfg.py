@@ -19,7 +19,7 @@ process.source = cms.Source(
     "PoolSource",
     fileNames = cms.untracked.vstring([
             #'root://cmsxrootd.fnal.gov//store/user/cmsdas/2026/short_exercises/MET/cmsdas_met_METFilters1.root',
-            'root://cmsxrootd.fnal.gov//store/user/cmsdas/2026/short_exercises/MET/cmsdas_met_METFilters2.root',
+            'root://cmseos.fnal.gov//store/user/cmsdas/2026/short_exercises/MET/cmsdas_met_METFilters2.root',
             ]
                                       )
     )
