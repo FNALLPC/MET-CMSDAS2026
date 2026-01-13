@@ -10,7 +10,7 @@ objectives:
 - "Learn about the Noisy event filters and their implementation."
 keypoints:
 - "Large MET in an event may be caused by detector noise, cosmic rays, and beam-halo particles. Such MET with uninteresting origins is called false MET, anomalous MET, or fake MET and can be an indication of problematic event reconstruction."
-- "Events with anomalos mets can be rejected using the Noisy event filters."
+- "Events with anomalous METs can be rejected using the Noisy event filters."
 ---
 
 > ## After following the instructions in the setup, make sure you have the CMS environment:
